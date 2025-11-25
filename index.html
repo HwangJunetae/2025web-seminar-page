@@ -346,10 +346,9 @@
     </footer>
 
     <!-- Google Sheets 연동 -->
-    <script>
+     <script>
         const googleAppsScriptUrl =
-        "https://script.google.com/macros/s/AKfycbzfdJC8aJuCMzA58Qs_3TV9xjivPBbfcIZiVZEMPRrLNx8cb9apomCQm28Ji78uskYlmw/exec";
-
+            "https://script.google.com/macros/s/AKfycbzfdJC8aJuCMzA58Qs_3TV9xjivPBbfcIZiVZEMPRrLNx8cb9apomCQm28Ji78uskYlmw/exec";
 
         const form = document.getElementById("registration-form");
 
@@ -358,20 +357,26 @@
 
             const formData = new FormData(form);
 
+            // 체크박스 여러 개 선택된 것 → ", " 로 합치기
             const attendDays = [];
-            document.querySelectorAll('input[name="attend_day"]:checked').forEach(chk => {
-                attendDays.push(chk.value);
-            });
+            document.querySelectorAll('input[name="attend_day"]:checked')
+                .forEach(chk => attendDays.push(chk.value));
 
             formData.delete("attend_day");
             formData.append("attend_day", attendDays.join(", "));
 
             fetch(googleAppsScriptUrl, {
                 method: "POST",
-                mode: "no-cors",
                 body: formData
             })
-            .then(() => {
+            .then(async (res) => {
+                try {
+                    const text = await res.text();
+                    console.log("Apps Script 응답:", text);
+                } catch (e) {
+                    console.log("응답 파싱 실패(무시 가능)", e);
+                }
+
                 alert("등록이 완료되었습니다! 감사합니다.");
                 form.reset();
             })
@@ -381,6 +386,8 @@
             });
         });
     </script>
+
+2️⃣ Apps Scr
 
 </body>
 </html>
