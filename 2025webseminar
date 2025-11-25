@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿼터백자산운용 VIP 전용 웹 세미나: 2026 은퇴 자산 프리미엄 전략</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+        }
+
+        /* 기본 색상 */
+        .text-gold-accent { color: #FBBF24; }
+        .border-gold-accent { border-color: #FBBF24; }
+
+        /* HERO 배경 이미지 */
+        .hero-with-banner {
+            background-image: url('banner_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #1D2A4B; /* 이미지 로딩 전 fallback 배경 */
+        }
+
+        /* CTA 버튼 */
+        .cta-button {
+            transition: all 0.3s ease;
+            background-color: #FBBF24;
+            color: #1F2937;
+        }
+        .cta-button:hover {
+            background-color: #FCD34D;
+            transform: translateY(-2px);
+            box-shadow:
+                0 4px 6px -1px rgba(0,0,0,0.1),
+                0 2px 4px -2px rgba(0,0,0,0.1);
+        }
+
+        /* 연사 카드 */
+        .speaker-card {
+            transition: transform 0.3s ease;
+        }
+        .speaker-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 연사 이미지 */
+        .speaker-image-container {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            margin-right: 1.25rem;
+            border-radius: 9999px;
+            overflow: hidden;
+            border: 2px solid #FBBF24;
+        }
+        .speaker-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- 1. HERO SECTION -->
+    <header class="hero-with-banner text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+
+            <p class="text-gray-300 mb-3 text-sm font-semibold uppercase tracking-widest">
+                쿼터백자산운용 VIP 고객 전용
+            </p>
+
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                흔들리는 <span class="text-gold-accent">미국 시장</span>,<br class="hidden sm:inline">
+                절세로 지키는 <span class="text-gold-accent">연금 계좌</span> 통합 설계
+            </h1>
+
+            <p class="text-xl opacity-90 mb-10 max-w-4xl mx-auto">
+                2025년 12월, 놓치면 후회하는 2026년 자산관리 필수 전략.<br>
+                심현수 CIO · 김범곤 WM센터장 · 박재범 마케팅 총괄 이사가 제시하는<br>
+                최고 수준의 은퇴 자산 포트폴리오 전략 세미나
+            </p>
+
+            <a href="#register" class="cta-button inline-block font-extrabold text-xl py-3.5 px-10 rounded-full">
+                지금 바로 등록하기
+            </a>
+
+            <p class="mt-8 text-sm opacity-80">
+                일정: 12/2(화) 오후 7:30 · 12/6(토) 오전 10:00 (총 2회)
+            </p>
+        </div>
+    </header>
+
+    <!-- 2. WHY SECTION -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 border-b-2 border-gold-accent inline-block pb-1">
+                2026 투자를 위한 3가지 필수 체크 포인트
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="p-6 bg-gray-50 rounded-lg shadow-xl border-t-4 border-[#1D2A4B]">
+                    <div class="text-4xl text-gold-accent mb-3">💰</div>
+                    <h3 class="text-xl font-semibold mb-2">세액공제 프리미엄 전략</h3>
+                    <p class="text-gray-600">
+                        ‘1,800만원’ 납입을 통한 과세이연 복리 효과 극대화 전략
+                    </p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg shadow-xl border-t-4 border-[#1D2A4B]">
+                    <div class="text-4xl text-gold-accent mb-3">📈</div>
+                    <h3 class="text-xl font-semibold mb-2">2026 글로벌 시장 리스크 관리</h3>
+                    <p class="text-gray-600">
+                        고환율 · 고점 논란 속 변동성을 이기는 미국 투자 전략
+                    </p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg shadow-xl border-t-4 border-[#1D2A4B]">
+                    <div class="text-4xl text-gold-accent mb-3">🗂️</div>
+                    <h3 class="text-xl font-semibold mb-2">IRP/연금저축 통합 운용 가이드</h3>
+                    <p class="text-gray-600">
+                        세액공제용 · 절세계좌용 · 퇴직금용 계좌별 최적화 전략
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PROGRAM SECTION -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center text-gold-accent mb-12">
+                웹 세미나 프로그램 안내 (각 세션 개별 신청 가능)
+            </h2>
+
+            <!-- Day 1 -->
+            <div class="mb-10 p-6 bg-gray-800 rounded-xl shadow-2xl border-l-8 border-gold-accent">
+                <h3 class="text-2xl font-bold text-gold-accent border-b border-gray-700 pb-3 mb-4">
+                    Day 1. 12/2(화) 19:30 – 흔들리는 미국 시장 돌파 전략
+                </h3>
+
+                <h4 class="text-xl font-semibold border-b border-dashed border-gray-700 pb-1">
+                    1부 흔들리는 미국 시장, 지금 투자해도 될까? (심현수 CIO)
+                </h4>
+                <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                    <li>현 시점 달러 자산 보유의 필요성</li>
+                    <li>환율이 올라가도 미국 투자를 해야 하는 이유</li>
+                </ul>
+
+                <h4 class="text-xl font-semibold border-b border-dashed border-gray-700 pb-1 pt-4">
+                    2부 미국 증시 고점 논란, 그래도 투자해야 할까?
+                </h4>
+                <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                    <li>S&P500 고점 상황에서 효율적인 미국 주식 투자 전략</li>
+                    <li>테마 투자 · 리밸런싱의 중요성</li>
+                </ul>
+
+                <p class="text-sm text-gray-200 pt-2 mt-4 border-t border-gray-700">
+                    * 심현수 CIO의 거시경제 & 포트폴리오 전략 인사이트 제공
+                </p>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="p-6 bg-gray-800 rounded-xl shadow-2xl border-l-8 border-gold-accent">
+
+                <h3 class="text-2xl font-bold text-gold-accent border-b border-gray-700 pb-3 mb-4">
+                    Day 2. 12/6(토) 10:00 – 연금 1,800만원 전략 & 미국 투자 실전 가이드
+                </h3>
+
+                <h4 class="text-xl font-semibold border-b border-dashed border-gray-700 pb-1">
+                    1부 연금계좌에 ‘1,800만원’을 납입해야 하는 이유 (김범곤 센터장)
+                </h4>
+                <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                    <li>연금계좌의 본질: 공제용이 아닌 절세계좌</li>
+                    <li>세액공제 + 과세이연 복리 효과 극대화</li>
+                    <li>계좌 분리 가이드 (세액공제/절세/퇴직금)</li>
+                </ul>
+
+                <h4 class="text-xl font-semibold border-b border-dashed border-gray-700 pb-1 pt-4">
+                    2부 미국 투자 실전 구성 가이드 (박재범 이사)
+                </h4>
+                <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                    <li>연금계좌에서 미국 투자가 중요한 이유</li>
+                    <li>IRP · 연금저축 실전 포트폴리오 구성</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SPEAKER SECTION -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 border-b-2 border-gold-accent inline-block pb-1">
+                최고의 전문성과 신뢰를 약속합니다
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <!-- Speaker 1 -->
+                <div class="speaker-card flex p-6 bg-gray-50 rounded-xl shadow-lg border border-gray-200">
+                    <div class="speaker-image-container">
+                        <img src="qb_sh.shim.jpg" alt="심현수 CIO" class="speaker-image">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">심현수</h3>
+                        <p class="text-navy-primary font-semibold mb-3">
+                            쿼터백자산운용 CIO (최고투자책임자)
+                        </p>
+                        <p class="text-gray-600 text-sm space-y-1">
+                            <span class="block">• 액티브 퀀트 전문가</span>
+                            <span class="block">• 글로벌 자산배분 총괄</span>
+                            <span class="block">• 위험 대비 수익 최적화 전략 전문</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Speaker 2 -->
+                <div class="speaker-card flex p-6 bg-gray-50 rounded-xl shadow-lg border border-gray-200">
+                    <div class="speaker-image-container">
+                        <img src="qb_bg.kim.jpg" alt="김범곤 WM센터장" class="speaker-image">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">김범곤</h3>
+                        <p class="text-navy-primary font-semibold mb-3">
+                            쿼터백자산운용 WM센터장 · 유튜브 "연금연구소"
+                        </p>
+                        <p class="text-gray-600 text-sm space-y-1">
+                            <span class="block">• 연금·은퇴 설계 최고 전문가</span>
+                            <span class="block">• CFP / ARPS / CPE 자격 보유</span>
+                            <span class="block">• 베스트셀러 '월 300만원 평생연금' 저자</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Speaker 3 -->
+                <div class="speaker-card flex p-6 bg-gray-50 rounded-xl shadow-lg border border-gray-200">
+                    <div class="speaker-image-container">
+                        <img src="qb_jb.park.jpg" alt="박재범 마케팅 총괄 이사" class="speaker-image">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">박재범</h3>
+                        <p class="text-navy-primary font-semibold mb-3">
+                            쿼터백자산운용 마케팅 총괄 이사
+                        </p>
+                        <p class="text-gray-600 text-sm space-y-1">
+                            <span class="block">• 고액 자산가 포트폴리오 전문가</span>
+                            <span class="block">• 위험 관리 중심 미국 투자 전략</span>
+                            <span class="block">• IRP/연금 계좌 실전 자산 설계 전문가</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. REGISTRATION SECTION -->
+    <section id="register" class="py-16 bg-[#1D2A4B]">
+        <div class="max-w-xl mx-auto px-4 text-center text-white">
+
+            <h2 class="text-3xl font-bold mb-3">
+                지금 바로 등록하여 확인해보세요
+            </h2>
+
+            <p class="text-lg opacity-90 mb-8">
+                기존 고객 무료 초청 · 선착순 마감
+            </p>
+
+            <form id="registration-form" class="bg-white p-6 rounded-xl shadow-2xl text-left space-y-4">
+
+                <p class="text-lg font-bold text-[#1D2A4B] text-center mb-4">
+                    참석 신청
+                </p>
+
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">
+                        성함 (본인 확인용)
+                    </label>
+                    <input type="text" id="name" name="name" required
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 text-gray-900">
+                </div>
+
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700">
+                        휴대폰 번호
+                    </label>
+                    <input type="tel" id="phone" name="phone" required
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 text-gray-900">
+                </div>
+
+                <div class="border-t border-gray-200 pt-4 space-y-3">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">
+                        참석 희망 세션 선택 (중복 가능)
+                    </label>
+
+                    <label class="flex items-start">
+                        <input type="checkbox" id="day1" name="attend_day" value="Day 1 (12/2)"
+                               class="h-4 w-4 text-[#1D2A4B]" checked>
+                        <span class="ml-3 text-sm text-gray-700">
+                            Day 1: 흔들리는 미국 시장 및 고점 논란 (심현수)
+                        </span>
+                    </label>
+
+                    <label class="flex items-start">
+                        <input type="checkbox" id="day2" name="attend_day" value="Day 2 (12/6)"
+                               class="h-4 w-4 text-[#1D2A4B]" checked>
+                        <span class="ml-3 text-sm text-gray-700">
+                            Day 2: 연금 1,800만원 전략 & 미국 투자 실전 (김범곤·박재범)
+                        </span>
+                    </label>
+                </div>
+
+                <button type="submit" class="cta-button w-full font-bold text-lg py-3 rounded-md mt-4">
+                    등록하기
+                </button>
+            </form>
+
+            <p class="mt-6 text-sm opacity-60">
+                * 본 웹 세미나는 자산관리 교육 목적이며 투자 권유가 아닙니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-gray-900 text-gray-400">
+        <div class="max-w-6xl mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 Quarterback Investments. All rights reserved.</p>
+            <p class="mt-2">문의: 02-6105-6524</p>
+        </div>
+    </footer>
+
+    <!-- Google Sheets 연동 -->
+    <script>
+        const googleAppsScriptUrl =
+            "https://script.google.com/macros/s/AKfycbwsV12mWJMd0X0ehtyDJG5kOdNeWI97XQe77e7B_fh_bVKVO-Ad_vOovPnYSWmmgmexNQ/exec";
+
+        const form = document.getElementById("registration-form");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            const attendDays = [];
+            document.querySelectorAll('input[name="attend_day"]:checked').forEach(chk => {
+                attendDays.push(chk.value);
+            });
+
+            formData.delete("attend_day");
+            formData.append("attend_day", attendDays.join(", "));
+
+            fetch(googleAppsScriptUrl, {
+                method: "POST",
+                mode: "no-cors",
+                body: formData
+            })
+            .then(() => {
+                alert("등록이 완료되었습니다! 감사합니다.");
+                form.reset();
+            })
+            .catch(error => {
+                console.error("전송 오류:", error);
+                alert("오류 발생. 다시 시도해주세요.");
+            });
+        });
+    </script>
+
+</body>
+</html>
